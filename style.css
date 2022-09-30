@@ -57,6 +57,9 @@ body {
 }
 
 .posterFriends {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 600px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.521);
 }
@@ -97,9 +100,42 @@ button {
   cursor: pointer;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
+  text-align: center;
   padding: 1.3rem;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.521);
 }
 button:hover {
   background-color: rgb(209, 154, 1);
+}
+
+@media all and (max-width: 500px) {
+  .title {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .title {
+    font-size: 1.9rem;
+  }
+  .titleDot1 {
+    font-size: 5rem;
+  }
+  .titleDot2 {
+    font-size: 5rem;
+  }
+  .titleDot3 {
+    font-size: 5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .quiz-container {
+    width: 480px;
+  }
+  button {
+    width: 480px;
+  }
 }
