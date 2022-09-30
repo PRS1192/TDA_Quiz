@@ -138,4 +138,7 @@ button:hover {
   button {
     width: 480px;
   }
+  .posterFriends {
+    width: 480px;
+  }
 }
