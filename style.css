@@ -154,4 +154,7 @@ button:hover {
   .quizBody {
     padding: 0rem;
   }
+  .posterFriends {
+    width: 480px;
+  }
 }

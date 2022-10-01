@@ -66,7 +66,7 @@ let questionDatabase = [
     correct: "buttonC",
   },
   {
-    question: "9) What is janice most likely to say as she enters a room?",
+    question: "9) What is Janice most likely to say as she enters a room?",
     a: "Talk to the hand!",
     b: "Get me a coffee, pronto!",
     c: "No way José",
