@@ -9,36 +9,46 @@
 .title {
   font-family: friendsFont;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 2.8rem;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 .titleDot1 {
   font-family: friendsFont;
   font-size: 8rem;
   color: rgb(255, 24, 30);
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   display: inline-block;
 }
 .titleDot2 {
   font-family: friendsFont;
   font-size: 8rem;
   color: rgb(0, 180, 234);
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   display: inline-block;
 }
 .titleDot3 {
   font-family: friendsFont;
   font-size: 8rem;
   color: rgb(255, 188, 0);
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   display: inline-block;
 }
 
 h1 {
   font-family: friendsFont;
-  margin-left: 210px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   color: white;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
 }
 
 h3 {
@@ -48,12 +58,12 @@ h3 {
 
 body {
   background-color: #6d6d6d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 90vh;
   overflow: hidden;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .posterFriends {
@@ -64,25 +74,21 @@ body {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.521);
 }
 
-.quiz-container {
+.quizContainer {
   background-color: rgb(223, 220, 213);
-  font-family: "Roboto", sans-serif;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.521);
   width: 600px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
 }
 
-.quiz-header {
+.quizBody {
   padding: 2rem;
 }
-h2 {
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
-}
+
 ul {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 ul li {
   font-size: 1.2rem;
@@ -94,6 +100,8 @@ ul li label {
 button {
   background-color: rgb(255, 188, 0);
   color: #fff;
+  padding: 1.3rem;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.521);
   border: none;
   display: block;
   width: 600px;
@@ -101,44 +109,49 @@ button {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  padding: 1.3rem;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.521);
 }
 button:hover {
   background-color: rgb(209, 154, 1);
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 650px) {
   .title {
-    font-size: 1rem;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .title {
-    font-size: 1.9rem;
+    font-size: 1.45rem;
   }
   .titleDot1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   .titleDot2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   .titleDot3 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
     margin-left: 0px;
   }
-  .quiz-container {
-    width: 480px;
+  .quizContainer {
+    width: 300px;
+    font-size: 0.7rem;
   }
   button {
-    width: 480px;
+    width: 300px;
+    font-size: 0.8rem;
+    padding: 0.9rem;
   }
   .posterFriends {
-    width: 480px;
+    width: 300px;
+  }
+  ul li {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  .quizBody {
+    padding: 0rem;
   }
 }
